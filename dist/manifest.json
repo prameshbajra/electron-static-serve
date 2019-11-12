@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json.schemastore.org/web-manifest",
+    "short_name": "Connected",
+    "name": "Connected by ITX",
+    "description": "Connected by ITX",
+    "background_color": "#2F516A",
+    "theme_color": "#68b1ea",
+    "start_url": "./?utm_source=web_app_manifest",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "assets/images/launcher/launcher-icon-2x.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/launcher/launcher-icon-3x.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/launcher/launcher-icon-4x.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/launcher/launcher-icon-4x.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

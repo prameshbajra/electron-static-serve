@@ -1,0 +1,823 @@
+{
+  "root": {
+    "myRequests": "All requests",
+    "myExpenses": "All expenses",
+    "myProfile": "My profile",
+    "createRequests": "New request",
+    "editRequests": "View request details",
+    "editExpense": "View expense details",
+    "editProfileRequests": "View request details"
+  },
+  "enum": {
+    "bornTo": {
+      "1": "Born on",
+      "2": "Born on"
+    },
+    "genders": {
+      "1": "Mr.",
+      "2": "Ms."
+    },
+    "priority": {
+      "1": "Critical",
+      "2": "High",
+      "3": "Medium",
+      "4": "Low"
+    },
+    "maritalStatus": {
+      "1": "Single",
+      "2": "Cohabitation",
+      "3": "Married",
+      "4": "Pacs",
+      "5": "Divorced",
+      "6": "Separated",
+      "7": "Widowed"
+    },
+    "relationshipTypes": {
+      "1": "Partner",
+      "2": "Parent",
+      "3": "Child",
+      "4": "Sibling",
+      "5": "Other"
+    },
+    "paymentMethods": {
+      "1": "Cash",
+      "2": "Credit Card"
+    },
+    "expenseCategories": {
+      "1": "Plane",
+      "2": "Fuel",
+      "3": "Mileage",
+      "4": "Hotel",
+      "5": "Toll",
+      "6": "Meal",
+      "7": "Taxi",
+      "8": "Train",
+      "9": "Public Transport",
+      "10": "Other"
+    },
+    "bankAccount": {
+      "1": "IBAN",
+      "2": "Bank Account"
+    },
+    "countries": {
+      "1": "AF - Afghanistan",
+      "2": "AL - Albania",
+      "3": "DZ - Algeria",
+      "4": "AR - Argentina",
+      "5": "AM - Armenia",
+      "6": "AU - Australia",
+      "7": "AT - Austria",
+      "8": "AZ - Azerbaijan",
+      "9": "BH - Bahrain",
+      "10": "BD - Bangladesh",
+      "11": "BY - Belarus",
+      "12": "BE - Belgium",
+      "13": "BZ - Belize",
+      "14": "VE - Bolivarian Republic of Venezuela",
+      "15": "BO - Bolivia",
+      "16": "BA - Bosnia and Herzegovina",
+      "17": "BW - Botswana",
+      "18": "BR - Brazil",
+      "19": "BN - Brunei Darussalam",
+      "20": "BG - Bulgaria",
+      "21": "KH - Cambodia",
+      "22": "CM - Cameroon",
+      "23": "CA - Canada",
+      "24": "029 - Caribbean",
+      "25": "CL - Chile",
+      "26": "CN - China",
+      "27": "CO - Colombia",
+      "28": "CD - Congo [DRC]",
+      "29": "CR - Costa Rica",
+      "30": "HR - Croatia",
+      "31": "CZ - Czech Republic",
+      "32": "DK - Denmark",
+      "33": "DO - Dominican Republic",
+      "34": "EC - Ecuador",
+      "35": "EG - Egypt",
+      "36": "SV - El Salvador",
+      "37": "ER - Eritrea",
+      "38": "EE - Estonia",
+      "39": "ET - Ethiopia",
+      "40": "FO - Faroe Islands",
+      "41": "FI - Finland",
+      "42": "FR - France",
+      "43": "GE - Georgia",
+      "44": "DE - Germany",
+      "45": "GR - Greece",
+      "46": "GL - Greenland",
+      "47": "GT - Guatemala",
+      "48": "HT - Haiti",
+      "49": "HN - Honduras",
+      "50": "HK - Hong Kong",
+      "51": "HU - Hungary",
+      "52": "IS - Iceland",
+      "53": "IN - India",
+      "54": "ID - Indonesia",
+      "55": "IR - Iran",
+      "56": "IQ - Iraq",
+      "57": "IE - Ireland",
+      "58": "IL - Israel",
+      "59": "IT - Italy",
+      "60": "CI - Ivory Coast",
+      "61": "JM - Jamaica",
+      "62": "JP - Japan",
+      "63": "JO - Jordan",
+      "64": "KZ - Kazakhstan",
+      "65": "KE - Kenya",
+      "66": "KR - Korea",
+      "67": "KW - Kuwait",
+      "68": "KG - Kyrgyzstan",
+      "69": "LA - Lao PDR",
+      "70": "419 - Latin America",
+      "71": "LV - Latvia",
+      "72": "LB - Lebanon",
+      "73": "LY - Libya",
+      "74": "LI - Liechtenstein",
+      "75": "LT - Lithuania",
+      "76": "LU - Luxembourg",
+      "77": "MO - Macao SAR",
+      "78": "MK - Macedonia (Former Yugoslav Republic of Macedonia)",
+      "79": "MY - Malaysia",
+      "80": "MV - Maldives",
+      "81": "ML - Mali",
+      "82": "MT - Malta",
+      "83": "MX - Mexico",
+      "84": "MD - Moldova",
+      "85": "MN - Mongolia",
+      "86": "ME - Montenegro",
+      "87": "MA - Morocco",
+      "88": "MM - Myanmar",
+      "89": "NP - Nepal",
+      "90": "NL - Netherlands",
+      "91": "NZ - New Zealand",
+      "92": "NI - Nicaragua",
+      "93": "NG - Nigeria",
+      "94": "NO - Norway",
+      "95": "OM - Oman",
+      "96": "PK - Pakistan",
+      "97": "PA - Panama",
+      "98": "PY - Paraguay",
+      "99": "PE - Peru",
+      "100": "PH - Philippines",
+      "101": "PL - Poland",
+      "102": "PT - Portugal",
+      "103": "MC - Principality of Monaco",
+      "104": "PR - Puerto Rico",
+      "105": "QA - Qatar",
+      "106": "RE - R�union",
+      "107": "RO - Romania",
+      "108": "RU - Russia",
+      "109": "RW - Rwanda",
+      "110": "SA - Saudi Arabia",
+      "111": "SN - Senegal",
+      "112": "RS - Serbia",
+      "113": "CS - Serbia and Montenegro (Former)",
+      "114": "SG - Singapore",
+      "115": "SK - Slovakia",
+      "116": "SI - Slovenia",
+      "117": "SO - Somalia",
+      "118": "ZA - South Africa",
+      "119": "ES - Spain",
+      "120": "LK - Sri Lanka",
+      "121": "SE - Sweden",
+      "122": "CH - Switzerland",
+      "123": "SY - Syria",
+      "124": "TW - Taiwan",
+      "125": "TJ - Tajikistan",
+      "126": "TH - Thailand",
+      "127": "TT - Trinidad and Tobago",
+      "128": "TN - Tunisia",
+      "129": "TR - Turkey",
+      "130": "TM - Turkmenistan",
+      "131": "AE - U.A.E.",
+      "132": "UA - Ukraine",
+      "133": "GB - United Kingdom",
+      "134": "US - United States",
+      "135": "UY - Uruguay",
+      "136": "UZ - Uzbekistan",
+      "137": "VN - Vietnam",
+      "138": "YE - Yemen",
+      "139": "ZW - Zimbabwe"
+    },
+    "currencies": {
+      "1": "EUR - Euro",
+      "2": "USD - US Dollar",
+      "3": "GBP - UK Pound Sterling",
+      "4": "CAD - Canadian Dollar",
+      "5": "CHF - Swiss Franc",
+      "6": "AED - UAE Dirham",
+      "7": "AFN - Afghani",
+      "8": "ALL - Albanian Lek",
+      "9": "AMD - Armenian Dram",
+      "10": "ARS - Argentine Peso",
+      "11": "AUD - Australian Dollar",
+      "12": "AZN - Azerbaijani Manat",
+      "13": "BAM - Convertible Marks",
+      "14": "BDT - Bangladeshi Taka",
+      "15": "BGN - Bulgarian Lev",
+      "16": "BHD - Bahraini Dinar",
+      "17": "BND - Brunei Dollar",
+      "18": "BOB - Boliviano",
+      "19": "BRL - Real",
+      "20": "BWP - Pula",
+      "21": "BYN - Belarusian Ruble",
+      "22": "BZD - Belize Dollar",
+      "23": "CDF - Congolese Franc",
+      "24": "CLP - Chilean Peso",
+      "25": "CNY - PRC Renminbi",
+      "26": "COP - Colombian Peso",
+      "27": "CRC - Costa Rican Colon",
+      "28": "CZK - Czech Koruna",
+      "29": "DKK - Danish Krone",
+      "30": "DOP - Dominican Peso",
+      "31": "DZD - Algerian Dinar",
+      "32": "EGP - Egyptian Pound",
+      "33": "ERN - Eritrean Nakfa",
+      "34": "ETB - Ethiopian Birr",
+      "35": "GEL - Lari",
+      "36": "GTQ - Guatemalan Quetzal",
+      "37": "HKD - Hong Kong Dollar",
+      "38": "HNL - Honduran Lempira",
+      "39": "HRK - Croatian Kuna",
+      "40": "HTG - Haitian Gourde",
+      "41": "HUF - Hungarian Forint",
+      "42": "IDR - Indonesian Rupiah",
+      "43": "ILS - Israeli New Shekel",
+      "44": "INR - Indian Rupee",
+      "45": "IQD - Iraqi Dinar",
+      "46": "IRR - Iranian Rial",
+      "47": "ISK - Icelandic Krona",
+      "48": "JMD - Jamaican Dollar",
+      "49": "JOD - Jordanian Dinar",
+      "50": "JPY - Japanese Yen",
+      "51": "KES - Kenyan Shilling",
+      "52": "KGS - som",
+      "53": "KHR - Riel",
+      "54": "KRW - Korean Won",
+      "55": "KWD - Kuwaiti Dinar",
+      "56": "KZT - Tenge",
+      "57": "LAK - Kip",
+      "58": "LBP - Lebanese Pound",
+      "59": "LKR - Sri Lanka Rupee",
+      "60": "LYD - Libyan Dinar",
+      "61": "MAD - Moroccan Dirham",
+      "62": "MDL - Moldovan Leu",
+      "63": "MKD - Macedonian Denar",
+      "64": "MMK - Myanmar Kyat",
+      "65": "MNT - Tugrik",
+      "66": "MOP - Macao Pataca",
+      "67": "MVR - Rufiyaa",
+      "68": "MXN - Mexican Peso",
+      "69": "MYR - Malaysian Ringgit",
+      "70": "NGN - Nigerian Naira",
+      "71": "NIO - Cordoba",
+      "72": "NOK - Norwegian Krone",
+      "73": "NPR - Nepalese Rupees",
+      "74": "NZD - New Zealand Dollar",
+      "75": "OMR - Omani Rial",
+      "76": "PAB - Panamanian Balboa",
+      "77": "PEN - Peruvian Nuevo Sol",
+      "78": "PHP - Philippine Peso",
+      "79": "PKR - Pakistan Rupee",
+      "80": "PLN - Polish Zloty",
+      "81": "PYG - Paraguay Guarani",
+      "82": "QAR - Qatari Rial",
+      "83": "RON - Romanian Leu",
+      "84": "RSD - Serbian Dinar",
+      "85": "RUB - Russian Ruble",
+      "86": "RWF - Rwandan Franc",
+      "87": "SAR - Saudi Riyal",
+      "88": "SEK - Swedish Krona",
+      "89": "SGD - Singapore Dollar",
+      "90": "SOS - Somali Shilling",
+      "91": "SYP - Syrian Pound",
+      "92": "THB - Thai Baht",
+      "93": "TJS - Somoni",
+      "94": "TMT - Turkmen manat",
+      "95": "TND - Tunisian Dinar",
+      "96": "TRY - Turkish Lira",
+      "97": "TTD - Trinidad Dollar",
+      "98": "TWD - New Taiwan Dollar",
+      "99": "UAH - Ukrainian Hryvnia",
+      "100": "UYU - Peso Uruguayo",
+      "101": "UZS - Uzbekistan Som",
+      "102": "VES - Venezuelan Bol�var",
+      "103": "VND - Vietnamese Dong",
+      "104": "XAF - CFA Franc BEAC",
+      "105": "XCD - Eastern Caribbean Do",
+      "106": "XOF - CFA",
+      "107": "YER - Yemeni Rial",
+      "108": "ZAR - South African Rand"
+    }
+  },
+  "login": {
+    "inputId": "Login",
+    "inputPassword": "Password",
+    "btnSubmit": "Log in",
+    "btnForgotPassword": "Recover ID or Password",
+    "validation": {
+      "credentialsErr": "Invalid credentials",
+      "noCredentials": "You must enter a login and password"
+    },
+    "popIn": {
+      "title": "Add the application to your homescreen for quick access!",
+      "desc": {
+        "iOS": "Click on the icon below and select the option: \"Add to the homescreen\"",
+        "android": "Click on the icon below and select the option: \"Add to the homescreen\""
+      },
+      "disableMessage": "Do not show this message again"
+    }
+  },
+  "resetPassword": {
+    "title": "Ask for a new password",
+    "desc": "You will receive a temporary password in your mailbox",
+    "inputId": "Login",
+    "inputEmail": "Email",
+    "btnSubmit": "Reset password",
+    "popIn": {
+      "title": "Reset password",
+      "emailInvalid": "Invalid email address",
+      "usernameInvalid": "Invalid username",
+      "resetPasswordSuccess": "Your password has been successfully reset. An email has been sent to you.",
+      "resetPasswordFailed": "Password reset failed"
+    }
+  },
+  "changePassword": {
+    "title": "Change password",
+    "inputId": "Login",
+    "inputOldPassword": "Old password",
+    "inputNewPassword": "New password",
+    "btnSubmit": "Change password",
+    "popIn": {
+      "title": "Change password",
+      "passwordChangeFailed": "Change password failed",
+      "usernameInvalid": "Invalid username",
+      "oldPasswordIncorrect": "Old password is incorrect",
+      "passwordRequirements": "The value provided for the new password does not meet the length or complexity required",
+      "passwordChangeSuccess": "Your password has been updated"
+    }
+  },
+  "firstAuth": {
+    "title": "First connection",
+    "desc": "An authentication code has been sent to you on your email",
+    "inputOTP": "Authentication code",
+    "btnSubmit": "Log On",
+    "btnResendOTP": "I did not receive an authentication code",
+    "noOTP": "Code required",
+    "invalidOTP": "Invalid code",
+    "popIn": {
+      "title": "Send OTP",
+      "desc": "OTP sent"
+    }
+  },
+  "leftMenu": {
+    "dashboard": "Home",
+    "createRequest": "Create request",
+    "allRequests": "All requests",
+    "expenses": "Expenses",
+    "profile": "My profile",
+    "disconnect": "Log off",
+    "language": "Language"
+  },
+  "dashboard": {
+    "noRequestsText": "Welcome to Connected by ITX",
+    "btnAllRequests": "Show all requests",
+    "popIn": {
+      "title": "New request",
+      "desc": "Make a new request to your manager here."
+    }
+  },
+  "profile": {
+    "home": {
+      "menu": {
+        "title": "My information",
+        "personalTitle": "Personal information",
+        "professionalTitle": "Professional information",
+        "financiaryTitle": "Financial information",
+        "emergencyTitle": "Emergency contact"
+      },
+      "partner": {
+        "title": "My partner",
+        "bornTo": ", born on",
+        "nationality": ", nationality"
+      },
+      "childrens": {
+        "title": "My children",
+        "bornTo": "Born on"
+      },
+      "administrator": {
+        "title": "My administrator"
+      }
+    },
+    "personalInfo": {
+      "title": "Personal information",
+      "identity": {
+        "title": "My identity",
+        "nationality": "nationality"
+      },
+      "maritalStatus": {
+        "title": "My civil status",
+        "since": "since"
+      },
+      "contactInfo": {
+        "title": "My contact information",
+        "email": "Email",
+        "homePhone": "Home phone",
+        "mobilePhone": "Mobile phone"
+      },
+      "addressInfo": {
+        "homeAddress": "Personal address"
+      }
+    },
+    "professionalInfo": {
+      "title": "Professional information",
+      "contactInfo": {
+        "title": "My contact information",
+        "email": "Email",
+        "homePhone": "Office phone",
+        "mobilePhone": "Mobile phone"
+      },
+      "workoutAddress": {
+        "title": "Professional address"
+      },
+      "superiorInfo": {
+        "title": "My superior",
+        "informationPending": "A request to change the superior is in progress",
+        "name": "Name",
+        "gender": "Gender",
+        "email": "Email",
+        "phone": "Phone"
+      }
+    },
+    "financialInfo": {
+      "title": "Financial information",
+      "beneficiary": "Beneficiary",
+      "bankType": "Type",
+      "acountNumber": "Account number",
+      "routingNumber": "Routing number",
+      "bic": "BIC",
+      "iban": "IBAN",
+      "country": "Country",
+      "currency": "Currency",
+      "comment": "Comment",
+      "startDate": "Effective date"
+    },
+    "emergencyInfo": {
+      "title": "Emergency contact information",
+      "subtitle": "Emergency contact",
+      "name": "Person to contact",
+      "gender": "Gender",
+      "relationship": "Relationship",
+      "email": "Email",
+      "phone": "Telephone"
+    },
+    "partnerInfo": {
+      "title": "Partner information",
+      "subtitle": "Partner",
+      "name": "Name",
+      "birthdate": "Birthdate",
+      "nationality": "Nationality",
+      "genre": "Gender",
+      "status": "Status",
+      "isExpatriate": "Expatriate"
+    },
+    "childrensInfo": {
+      "title": "Child information"
+    }
+  },
+  "uploadPicture": {
+    "title": "Update profile picture",
+    "acceptedFiles": "jpg, png...",
+    "labelButton": "Upload"
+  },
+  "expenses": {
+    "pageTitle": "All my expenses",
+    "open": "Open",
+    "closed": "Closed",
+    "noExpenses": "Empty"
+  },
+  "helpdesks": {
+    "pageTitle": "All requests",
+    "open": "Open",
+    "closed": "Closed",
+    "noHelpdesks": "Empty"
+  },
+  "requestStatus": {
+    "inProgress": "In progress",
+    "pending": "Pending",
+    "closed": "Rejected",
+    "completed": "Completed",
+    "created": "Created"
+  },
+  "showRequest": {},
+  "createRequest": {
+    "general": {
+      "title": "New request",
+      "status": "Status",
+      "createAt": "Created on",
+      "priority": {
+        "title": "Priority"
+      },
+      "titleLabel": "Title",
+      "description": "Description",
+      "typeOfRequest": "Request type",
+      "errorGlobal": "Your request contains errors",
+      "errorFormNoModifed": "Please update at least one field",
+      "errorRequired": "(Mandatory field)",
+      "errorFileSize": "(The size of the file should not exceed 9 mb)",
+      "errorGlobalFileSize": "(The total size of the files should not exceed 18 mb)",
+      "errorFormat": "(Invalid format)",
+      "selectPlaceholder": "Please select a value",
+      "optional": "Optional",
+      "requestType": "Request type",
+      "attachment": {
+        "label": "Attachment",
+        "description": "(image format JPG or PDF file)"
+      },
+      "requestMessages": "History of messages",
+      "yourResponse": "Your reply"
+    },
+    "menu": {
+      "title": "New request",
+      "expense": "Create expense",
+      "address": "Update my address",
+      "contact": "Update my contact information",
+      "status": "Update my civil status",
+      "passport": "Update my passport information",
+      "childrens": "Add or remove a dependent child",
+      "bank": "Add or delete a bank account",
+      "helpdesk": "Helpdesk",
+      "profile": "Profile",
+      "other": "Other request",
+      "superior": "Superior"
+    },
+    "expense": {
+      "pageTitle": "",
+      "textSuperiorValidation": {
+        "partOne": "Expense will be confirmed by",
+        "partTwo": "Would you like to report a change of supervisor?",
+        "btnChangeSuperior": "Change my supervisor"
+      },
+      "textSuperiorPending": "A request to change the superior is in progress",
+      "form": {
+        "date": { "label": "Date","description":"Sample Description" },
+        "category": { "label": "Category","description":"Sample Description" },
+        "price": { "label": "Price", "placeholder": "ex: 34.25" ,"description":"Sample Description"},
+        "currency": { "label": "Currency" ,"description":"Sample Description"},
+        "paymentMethod": { "label": "Payment Method","description":"Sample Description" },
+        "bankAccount": { "label": "Bank account","description":"Sample Description" },
+        "comment": { "label": "Comment", "placeholder": "ex: taxi","description":"Sample Description" },
+        "attachment": {
+          "label": "Attachment",
+          "description": "Proof of expense"
+        }
+      },
+      "popInErr": {
+        "title": "Send new expense"
+      }
+    },
+    "address": {
+      "pageTitle": "Address change",
+      "form": {
+        "pro": "Professional",
+        "perso": "Personal",
+        "from": {"label":"From", "description":"Sample Description"},
+        "careOf": {
+          "label": "To the attention of",
+          "placeholder": "ex: Jean Dupont","description":"Sample Description"
+        },
+        "address": {
+          "label": "Address",
+          "description": "Address street number  and name, floor, etc.",
+          "placeholder": "ex: 7 rue des tamarins"
+        },
+        "city": {
+          "label": "City",
+          "placeholder": "ex: Lausanne","description":"Sample Description"
+        },
+        "state": {
+          "label": "State",
+          "placeholder": "ex: Vaud","description":"Sample Description"
+        },
+        "pobox": {
+          "label": "P.O. Box",
+          "placeholder": "ex: po box","description":"Sample Description"
+        },
+        "zip": {
+          "label": "Zip",
+          "placeholder": "ex: 1201","description":"Sample Description"
+        },
+        "country": {
+          "label": "Country","description":"Sample Description"
+        },
+        "attachment": {
+          "label": "Attachment",
+          "description": "(If personal address) Proof of residence"
+        }
+      },
+      "popInErr": {
+        "title": "Update address"
+      }
+    },
+    "contact": {
+      "pageTitle": "Contact information changes",
+      "form": {
+        "personalTitle": "Personal contact information",
+        "professionalTitle": "Professional contact information",
+        "emergencyTitle": "Emergency contact information",
+        "email": { "label": "Email", "placeholder": "ex: example@example.com","description":"Sample Description" },
+        "phone": { "label": "Phone", "placeholder": "ex: 0987654321","description":"Sample Description" },
+        "mobile": { "label": "Mobile", "placeholder": "ex: 0987654321","description":"Sample Description" },
+        "gender": { "label": "Gender", "placeholder": "","description":"Sample Description" },
+        "firstName": { "label": "First name", "placeholder": "ex: Marie","description":"Sample Description" },
+        "lastName": { "label": "Last name", "placeholder": "ex: Reyes","description":"Sample Description" },
+        "phoneEmergency": {
+          "label": "Emergency Phone number",
+          "placeholder": "ex: 0987654321","description":"Sample Description"
+        },
+        "relationship": { "label": "Relationship","description":"Sample Description" }
+      },
+      "popInErr": {
+        "title": "Update contact information"
+      }
+    },
+    "status": {
+      "pageTitle": "Update my civil status",
+      "form": {
+        "changeDate": { "label": "Change date", "placeholder": "","description":"Sample Description" },
+        "maritalStatus": { "label": "Civil status", "placeholder": "","description":"Sample Description" },
+        "partnerInfo": { "label": "Partner information", "placeholder": "","description":"Sample Description" },
+        "gender": { "label": "Gender", "placeholder": "","description":"Sample Description" },
+        "firstName": { "label": "First name", "placeholder": "ex: Martin","description":"Sample Description"},
+        "lastName": { "label": "Last name", "placeholder": "ex: Durier","description":"Sample Description" },
+        "birthdate": { "label": "Birth date", "placeholder": "","description":"Sample Description" },
+        "nationality": {
+          "label": "Nationality",
+          "placeholder": "ex: Switzerland","description":"Sample Description"
+        },
+        "phone": { "label": "Phone number", "placeholder": "ex: 0987654321","description":"Sample Description" },
+        "email": { "label": "Email", "placeholder": "ex: example@example.com","description":"Sample Description" },
+        "isExpatriate": { "label": "Expatriate?","description":"Sample Description" },
+        "yes": "Yes",
+        "no": "No",
+        "passportNumber": {
+          "label": "Passport number",
+          "placeholder": "ex: 0987654321","description":"Sample Description"
+        },
+        "expirationDate": { "label": "Expiration date", "placeholder": "","description":"Sample Description" },
+        "attachment": {
+          "label": "Attachment",
+          "description": "(Depending on Civil status) Marriage certificate / Divorce certificate / Death certificate, (If expatriate partner) Partner's passport"
+        }
+      },
+      "popInErr": {
+        "title": "Update civil status"
+      }
+    },
+    "passport": {
+      "pageTitle": "Update passport",
+      "form": {
+        "selectPassport": "Passport to change",
+        "passportNumber": {
+          "label": "Passport number",
+          "placeholder": "ex: 0987654321","description":"Sample Description"
+        },
+        "expirationDate": { "label": "Expiration date","description":"Sample Description"},
+        "attachment": {
+          "label": "Attachment",
+          "description": "Passport"
+        }
+      },
+      "popInErr": {
+        "title": "Update passport"
+      }
+    },
+    "childrens": {
+      "pageTitle": {
+        "title1": "Add a child",
+        "title2": "Remove a child"
+      },
+      "form": {
+        "selectChildren": "Select a child",
+        "reason": {
+          "label": "Reasons",
+          "placeholder": "ex: ...","description":"Sample Description"
+        },
+        "add": "Add",
+        "remove": "Remove",
+        "gender": { "label": "Gender","description":"Sample Description" },
+        "firstName": {
+          "label": "First name",
+          "placeholder": "ex: Sylvie","description":"Sample Description"
+        },
+        "lastName": {
+          "label": "Last name",
+          "placeholder": "ex: Depontel","description":"Sample Description"
+        },
+        "birthdate": { "label": "Birth date","description":"Sample Description" },
+        "nationality": { "label": "Nationality","description":"Sample Description" },
+        "passportNumber": {
+          "label": "Passport number",
+          "placeholder": "ex: 0987654321","description":"Sample Description"
+        },
+        "expirationDate": { "label": "Expiration date","description":"Sample Description" },
+        "isExpatriate": { "label": "Expatriate child","description":"Sample Description" },
+        "isDependant": { "label": "Tax dependant","description":"Sample Description" },
+        "yes": "Yes",
+        "no": "No",
+        "status": { "label": "Status","description":"Sample Description" },
+        "attachment": {
+          "label": "Attachment",
+          "description": "Child's passport (if available) / Birth certificate / family record book / adoption certificate"
+        }
+      },
+      "popInErr": {
+        "titleAdd": "Add child",
+        "titleRemove": "Remove child"
+      }
+    },
+    "bank": {
+      "pageTitle": {
+        "title1": "Add a bank account",
+        "title2": "Remove a bank account"
+      },
+      "form": {
+        "selectAccount": { "label": "Select an account","description":"Sample Description" },
+        "accountNumber": {
+          "label": "Account number",
+          "placeholder": "Account number","description":"Sample Description"
+        },
+        "routingNumber": {
+          "label": "Routing number",
+          "placeholder": "Routing number","description":"Sample Description"
+        },
+        "reason": {
+          "label": "Motif",
+          "placeholder": "ex: Home moving, bank update","description":"Sample Description"
+        },
+        "add": { "label": "Add","description":"Sample Description" },
+        "remove": { "label": "Remove","description":"Sample Description" },
+        "from": { "label": "From","description":"Sample Description" },
+        "bankName": { "label": "Bank name", "placeholder": "ex: MyNewBank","description":"Sample Description" },
+        "country": { "label": "Country","description":"Sample Description" },
+        "bic": { "label": "BIC", "placeholder": "ex: LLLL LL XX XXX","description":"Sample Description" },
+        "iban": { "label": "IBAN", "placeholder": "ex: CP CC BBAN","description":"Sample Description" },
+        "beneficiary": {
+          "label": "Beneficiary",
+          "placeholder": "ex: Cyril Martin","description":"Sample Description"
+        },
+        "currency": { "label": "Currency","description":"Sample Description"},
+        "comment": {
+          "label": "Comment",
+          "placeholder": "ex: My new account...","description":"Sample Description"
+        },
+        "type": { "label": "Account type","description":"Sample Description" },
+        "attachment": {
+          "label": "Attachment",
+          "description": "Bank account details"
+        }
+      },
+      "popInErr": {
+        "titleAdd": "Add bank account",
+        "titleRemove": "Remove bank account"
+      }
+    },
+    "other": {
+      "sendRequestPopup": {
+        "title": "Your request will be sent to your administrator and can't be modified. Do you want to send your request?",
+        "hideMessage": "Don't show this message again",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "form": {
+        "title": { "label": "Title", "placeholder": "ex: Water shortage" ,"description":"Sample Description"},
+        "desc": {
+          "label": "Description",
+          "placeholder": "ex: Lorem ipsum dolor sit amet consectutir adepiscin...","description":"Sample Description"
+        },
+        "priority": { "label": "Priority","description":"Sample Description" },
+        "attachment": {
+          "label": "Attachment",
+          "description": "If necessary, please join any supporting document in connection to your request."
+        }
+      },
+      "popInErr": {
+        "title": "Helpdesk request"
+      }
+    },
+    "superior": {
+      "pageTitle": "Update my supervisor",
+      "form": {
+        "gender": { "label": "Gender","description":"Sample Description" },
+        "firstName": { "label": "First name","description":"Sample Description" },
+        "lastName": { "label": "Last name","description":"Sample Description" },
+        "email": { "label": "Email","description":"Sample Description" },
+        "phone": { "label": "Phone number","description":"Sample Description" }
+      },
+      "popInErr": {
+        "title": "Update supervisor"
+      }
+    }
+  }
+}

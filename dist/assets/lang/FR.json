@@ -1,0 +1,811 @@
+{
+  "root": {
+    "myRequests": "Toutes mes demandes",
+    "myExpenses": "Toutes mes notes de frais",
+    "myProfile": "Mon profil",
+    "createRequests": "Nouvelle demande",
+    "editRequests": "Consulter ma demande",
+    "editExpense": "Consulter ma note de frais",
+    "editProfileRequests": "Consulter ma demande"
+  },
+  "enum": {
+    "bornTo": {
+      "1": "Né le",
+      "2": "Née le"
+    },
+    "genders": {
+      "1": "M.",
+      "2": "Mme"
+    },
+    "priority": {
+      "1": "Critique",
+      "2": "Haute",
+      "3": "Moyenne",
+      "4": "Basse"
+    },
+    "maritalStatus": {
+      "1": "Célibataire",
+      "2": "En concubinage",
+      "3": "Marié(e)",
+      "4": "Pacsé(e)",
+      "5": "Divorcé(e)",
+      "6": "Séparé(e)",
+      "7": "Veuf(ve)"
+    },
+    "relationshipTypes": {
+      "1": "Partenaire",
+      "2": "Parent",
+      "3": "Enfant",
+      "4": "Frère/Soeur",
+      "5": "Autre"
+    },
+    "paymentMethods": {
+      "1": "Cash",
+      "2": "Carte Bancaire"
+    },
+    "expenseCategories": {
+      "1": "Avion",
+      "2": "Carburant",
+      "3": "Kilométrage",
+      "4": "Hôtel",
+      "5": "Péage",
+      "6": "Repas",
+      "7": "Taxi",
+      "8": "Train",
+      "9": "Transport Public",
+      "10": "Autre"
+    },
+    "bankAccount": {
+      "1": "IBAN",
+      "2": "Compte Bancaire"
+    },
+    "countries": {
+      "1": "AF - Afghanistan",
+      "2": "AL - Albania",
+      "3": "DZ - Algeria",
+      "4": "AR - Argentina",
+      "5": "AM - Armenia",
+      "6": "AU - Australia",
+      "7": "AT - Austria",
+      "8": "AZ - Azerbaijan",
+      "9": "BH - Bahrain",
+      "10": "BD - Bangladesh",
+      "11": "BY - Belarus",
+      "12": "BE - Belgium",
+      "13": "BZ - Belize",
+      "14": "VE - Bolivarian Republic of Venezuela",
+      "15": "BO - Bolivia",
+      "16": "BA - Bosnia and Herzegovina",
+      "17": "BW - Botswana",
+      "18": "BR - Brazil",
+      "19": "BN - Brunei Darussalam",
+      "20": "BG - Bulgaria",
+      "21": "KH - Cambodia",
+      "22": "CM - Cameroon",
+      "23": "CA - Canada",
+      "24": "029 - Caribbean",
+      "25": "CL - Chile",
+      "26": "CN - China",
+      "27": "CO - Colombia",
+      "28": "CD - Congo [DRC]",
+      "29": "CR - Costa Rica",
+      "30": "HR - Croatia",
+      "31": "CZ - Czech Republic",
+      "32": "DK - Denmark",
+      "33": "DO - Dominican Republic",
+      "34": "EC - Ecuador",
+      "35": "EG - Egypt",
+      "36": "SV - El Salvador",
+      "37": "ER - Eritrea",
+      "38": "EE - Estonia",
+      "39": "ET - Ethiopia",
+      "40": "FO - Faroe Islands",
+      "41": "FI - Finland",
+      "42": "FR - France",
+      "43": "GE - Georgia",
+      "44": "DE - Germany",
+      "45": "GR - Greece",
+      "46": "GL - Greenland",
+      "47": "GT - Guatemala",
+      "48": "HT - Haiti",
+      "49": "HN - Honduras",
+      "50": "HK - Hong Kong",
+      "51": "HU - Hungary",
+      "52": "IS - Iceland",
+      "53": "IN - India",
+      "54": "ID - Indonesia",
+      "55": "IR - Iran",
+      "56": "IQ - Iraq",
+      "57": "IE - Ireland",
+      "58": "IL - Israel",
+      "59": "IT - Italy",
+      "60": "CI - Ivory Coast",
+      "61": "JM - Jamaica",
+      "62": "JP - Japan",
+      "63": "JO - Jordan",
+      "64": "KZ - Kazakhstan",
+      "65": "KE - Kenya",
+      "66": "KR - Korea",
+      "67": "KW - Kuwait",
+      "68": "KG - Kyrgyzstan",
+      "69": "LA - Lao PDR",
+      "70": "419 - Latin America",
+      "71": "LV - Latvia",
+      "72": "LB - Lebanon",
+      "73": "LY - Libya",
+      "74": "LI - Liechtenstein",
+      "75": "LT - Lithuania",
+      "76": "LU - Luxembourg",
+      "77": "MO - Macao SAR",
+      "78": "MK - Macedonia (Former Yugoslav Republic of Macedonia)",
+      "79": "MY - Malaysia",
+      "80": "MV - Maldives",
+      "81": "ML - Mali",
+      "82": "MT - Malta",
+      "83": "MX - Mexico",
+      "84": "MD - Moldova",
+      "85": "MN - Mongolia",
+      "86": "ME - Montenegro",
+      "87": "MA - Morocco",
+      "88": "MM - Myanmar",
+      "89": "NP - Nepal",
+      "90": "NL - Netherlands",
+      "91": "NZ - New Zealand",
+      "92": "NI - Nicaragua",
+      "93": "NG - Nigeria",
+      "94": "NO - Norway",
+      "95": "OM - Oman",
+      "96": "PK - Pakistan",
+      "97": "PA - Panama",
+      "98": "PY - Paraguay",
+      "99": "PE - Peru",
+      "100": "PH - Philippines",
+      "101": "PL - Poland",
+      "102": "PT - Portugal",
+      "103": "MC - Principality of Monaco",
+      "104": "PR - Puerto Rico",
+      "105": "QA - Qatar",
+      "106": "RE - Réunion",
+      "107": "RO - Romania",
+      "108": "RU - Russia",
+      "109": "RW - Rwanda",
+      "110": "SA - Saudi Arabia",
+      "111": "SN - Senegal",
+      "112": "RS - Serbia",
+      "113": "CS - Serbia and Montenegro (Former)",
+      "114": "SG - Singapore",
+      "115": "SK - Slovakia",
+      "116": "SI - Slovenia",
+      "117": "SO - Somalia",
+      "118": "ZA - South Africa",
+      "119": "ES - Spain",
+      "120": "LK - Sri Lanka",
+      "121": "SE - Sweden",
+      "122": "CH - Switzerland",
+      "123": "SY - Syria",
+      "124": "TW - Taiwan",
+      "125": "TJ - Tajikistan",
+      "126": "TH - Thailand",
+      "127": "TT - Trinidad and Tobago",
+      "128": "TN - Tunisia",
+      "129": "TR - Turkey",
+      "130": "TM - Turkmenistan",
+      "131": "AE - U.A.E.",
+      "132": "UA - Ukraine",
+      "133": "GB - United Kingdom",
+      "134": "US - United States",
+      "135": "UY - Uruguay",
+      "136": "UZ - Uzbekistan",
+      "137": "VN - Vietnam",
+      "138": "YE - Yemen",
+      "139": "ZW - Zimbabwe"
+    },
+    "currencies": {
+      "1": "EUR - Euro",
+      "2": "USD - US Dollar",
+      "3": "GBP - UK Pound Sterling",
+      "4": "CAD - Canadian Dollar",
+      "5": "CHF - Swiss Franc",
+      "6": "AED - UAE Dirham",
+      "7": "AFN - Afghani",
+      "8": "ALL - Albanian Lek",
+      "9": "AMD - Armenian Dram",
+      "10": "ARS - Argentine Peso",
+      "11": "AUD - Australian Dollar",
+      "12": "AZN - Azerbaijani Manat",
+      "13": "BAM - Convertible Marks",
+      "14": "BDT - Bangladeshi Taka",
+      "15": "BGN - Bulgarian Lev",
+      "16": "BHD - Bahraini Dinar",
+      "17": "BND - Brunei Dollar",
+      "18": "BOB - Boliviano",
+      "19": "BRL - Real",
+      "20": "BWP - Pula",
+      "21": "BYN - Belarusian Ruble",
+      "22": "BZD - Belize Dollar",
+      "23": "CDF - Congolese Franc",
+      "24": "CLP - Chilean Peso",
+      "25": "CNY - PRC Renminbi",
+      "26": "COP - Colombian Peso",
+      "27": "CRC - Costa Rican Colon",
+      "28": "CZK - Czech Koruna",
+      "29": "DKK - Danish Krone",
+      "30": "DOP - Dominican Peso",
+      "31": "DZD - Algerian Dinar",
+      "32": "EGP - Egyptian Pound",
+      "33": "ERN - Eritrean Nakfa",
+      "34": "ETB - Ethiopian Birr",
+      "35": "GEL - Lari",
+      "36": "GTQ - Guatemalan Quetzal",
+      "37": "HKD - Hong Kong Dollar",
+      "38": "HNL - Honduran Lempira",
+      "39": "HRK - Croatian Kuna",
+      "40": "HTG - Haitian Gourde",
+      "41": "HUF - Hungarian Forint",
+      "42": "IDR - Indonesian Rupiah",
+      "43": "ILS - Israeli New Shekel",
+      "44": "INR - Indian Rupee",
+      "45": "IQD - Iraqi Dinar",
+      "46": "IRR - Iranian Rial",
+      "47": "ISK - Icelandic Krona",
+      "48": "JMD - Jamaican Dollar",
+      "49": "JOD - Jordanian Dinar",
+      "50": "JPY - Japanese Yen",
+      "51": "KES - Kenyan Shilling",
+      "52": "KGS - som",
+      "53": "KHR - Riel",
+      "54": "KRW - Korean Won",
+      "55": "KWD - Kuwaiti Dinar",
+      "56": "KZT - Tenge",
+      "57": "LAK - Kip",
+      "58": "LBP - Lebanese Pound",
+      "59": "LKR - Sri Lanka Rupee",
+      "60": "LYD - Libyan Dinar",
+      "61": "MAD - Moroccan Dirham",
+      "62": "MDL - Moldovan Leu",
+      "63": "MKD - Macedonian Denar",
+      "64": "MMK - Myanmar Kyat",
+      "65": "MNT - Tugrik",
+      "66": "MOP - Macao Pataca",
+      "67": "MVR - Rufiyaa",
+      "68": "MXN - Mexican Peso",
+      "69": "MYR - Malaysian Ringgit",
+      "70": "NGN - Nigerian Naira",
+      "71": "NIO - Cordoba",
+      "72": "NOK - Norwegian Krone",
+      "73": "NPR - Nepalese Rupees",
+      "74": "NZD - New Zealand Dollar",
+      "75": "OMR - Omani Rial",
+      "76": "PAB - Panamanian Balboa",
+      "77": "PEN - Peruvian Nuevo Sol",
+      "78": "PHP - Philippine Peso",
+      "79": "PKR - Pakistan Rupee",
+      "80": "PLN - Polish Zloty",
+      "81": "PYG - Paraguay Guarani",
+      "82": "QAR - Qatari Rial",
+      "83": "RON - Romanian Leu",
+      "84": "RSD - Serbian Dinar",
+      "85": "RUB - Russian Ruble",
+      "86": "RWF - Rwandan Franc",
+      "87": "SAR - Saudi Riyal",
+      "88": "SEK - Swedish Krona",
+      "89": "SGD - Singapore Dollar",
+      "90": "SOS - Somali Shilling",
+      "91": "SYP - Syrian Pound",
+      "92": "THB - Thai Baht",
+      "93": "TJS - Somoni",
+      "94": "TMT - Turkmen manat",
+      "95": "TND - Tunisian Dinar",
+      "96": "TRY - Turkish Lira",
+      "97": "TTD - Trinidad Dollar",
+      "98": "TWD - New Taiwan Dollar",
+      "99": "UAH - Ukrainian Hryvnia",
+      "100": "UYU - Peso Uruguayo",
+      "101": "UZS - Uzbekistan Som",
+      "102": "VES - Venezuelan Bolívar",
+      "103": "VND - Vietnamese Dong",
+      "104": "XAF - CFA Franc BEAC",
+      "105": "XCD - Eastern Caribbean Do",
+      "106": "XOF - CFA",
+      "107": "YER - Yemeni Rial",
+      "108": "ZAR - South African Rand"
+    }
+  },
+  "login": {
+    "inputId": "Identifiant",
+    "inputPassword": "Mot de passe",
+    "btnSubmit": "Se connecter",
+    "btnForgotPassword": "Identifiant ou mot de passe oublié",
+    "validation": {
+      "credentialsErr": "Identifiants non valides",
+      "noCredentials": "Vouz devez saisir un identifiant et un mot de passe"
+    },
+    "popIn": {
+      "title": "Ajouter l'application à votre écran d'accueil pour un accès rapide!",
+      "desc": {
+        "iOS": "Cliquez sur l'icône ci-dessous et sélectionnez ensuite l'option : \"Ajouter à l'écran d'accueil\"",
+        "android": "Cliquez sur l'icône ci-dessous et sélectionnez ensuite l'option : \"Ajouter à l'écran d'accueil\""
+      },
+      "disableMessage": "ne plus afficher ce message"
+    }
+  },
+  "resetPassword": {
+    "title": "Demander un nouveau mot de passe",
+    "desc": "Vous recevrez un mot de passe provisoire dans votre boîte mail",
+    "inputId": "Identifiant",
+    "inputEmail": "Email",
+    "btnSubmit": "Réinitialiser le mot de passe",
+    "popIn": {
+      "title": "Réinitialisation du mot de passe",
+      "emailInvalid": "Addresse email incorrecte",
+      "usernameInvalid": "Le nom d'utilisateur est incorrecte",
+      "resetPasswordSuccess": "Votre mot de passe a bien été réinitialisé, un mail vous sera envoyé.",
+      "resetPasswordFailed": "La réinitialisation du mot de passe a échoué"
+    }
+  },
+  "changePassword": {
+    "title": "Changer de mot de passe",
+    "inputId": "Identifiant",
+    "inputOldPassword": "Ancien mot de passe",
+    "inputNewPassword": "Nouveau mot de passe",
+    "btnSubmit": "Changer le mot de passe",
+    "popIn": {
+      "title": "Changement de mot de passe",
+      "passwordChangeFailed": "Le changement de mot de passe a échoué",
+      "usernameInvalid": "Le nom d'utilisateur est invalide",
+      "oldPasswordIncorrect": "L'ancien mot de passe est incorrecte",
+      "passwordRequirements": "Le nouveau mot de passe de répond pas aux critères requis",
+      "passwordChangeSuccess": "Le mot de passe a bien été modifié"
+    }
+  },
+  "firstAuth": {
+    "title": "Première connexion",
+    "desc": "Un code d'authentification vous a été envoyé sur votre mail",
+    "inputOTP": "Code d'authentification",
+    "btnSubmit": "S'authentifier",
+    "btnResendOTP": "Je n'ai pas reçu le code d'authentification",
+    "noOTP": "Code requis",
+    "invalidOTP": "Code invalide",
+    "popIn": {
+      "title": "Envoie du code OTP",
+      "desc": "Code renvoyé"
+    }
+  },
+  "leftMenu": {
+    "dashboard": "Accueil",
+    "createRequest": "Créer une demande",
+    "allRequests": "Toutes mes demandes",
+    "expenses": "Notes de frais",
+    "profile": "Mon profil",
+    "disconnect": "Déconnexion",
+    "language": "Langue"
+  },
+  "dashboard": {
+    "noRequestsText": "Bienvenue sur l'application CONNECTED by ITX",
+    "btnAllRequests": "Voir toutes les demandes",
+    "popIn": {
+      "title": "Nouvelle demande",
+      "desc": "Effectuez ici une nouvelle demande à votre gestionnaire"
+    }
+  },
+  "profile": {
+    "home": {
+      "menu": {
+        "title": "Mes informations",
+        "personalTitle": "Informations personnelles",
+        "professionalTitle": "Informations professionnelles",
+        "financiaryTitle": "Informations financières",
+        "emergencyTitle": "Contact d'urgence"
+      },
+      "partner": {
+        "title": "Mon conjoint",
+        "bornTo": ", né(e) le",
+        "nationality": ", nationalité"
+      },
+      "childrens": {
+        "title": "Mes enfants",
+        "bornTo": "Né(e) le"
+      },
+      "administrator": {
+        "title": "Mon gestionnaire"
+      }
+    },
+    "personalInfo": {
+      "title": "Informations personnelles",
+      "identity": {
+        "title": "Mon identité",
+        "nationality": ", nationalité"
+      },
+      "maritalStatus": {
+        "title": "Mon état civil",
+        "since": ", depuis le"
+      },
+      "contactInfo": {
+        "title": "Mes informations de contact",
+        "email": "Email",
+        "homePhone": "Téléphone fixe",
+        "mobilePhone": "Téléphone mobile"
+      },
+      "addressInfo": {
+        "homeAddress": "Adresse personnelle"
+      }
+    },
+    "professionalInfo": {
+      "title": "Informations professionnelles",
+      "contactInfo": {
+        "title": "Mes informations de contact",
+        "email": "Email",
+        "homePhone": "Téléphone fixe",
+        "mobilePhone": "Téléphone mobile"
+      },
+      "workoutAddress": {
+        "title": "Adresse professionnelle"
+      },
+      "superiorInfo": {
+        "title": "Mon supérieur",
+        "informationPending": "Une demande de modification de votre supérieur est actuellement en cours",
+        "name": "Nom",
+        "gender": "Genre",
+        "email": "Email",
+        "phone": "Téléphone"
+      }
+    },
+    "financialInfo": {
+      "title": "Informations financières",
+      "beneficiary": "Bénéficiaire",
+      "bankType": "Type",
+      "acountNumber": "Numéro de compte",
+      "routingNumber": "Numéro de routage",
+      "bic": "BIC",
+      "iban": "IBAN",
+      "country": "Pays",
+      "currency": "Devise",
+      "comment": "Commentaire",
+      "startDate": "Date effective"
+    },
+    "emergencyInfo": {
+      "title": "Inbformations contact d'urgence",
+      "subtitle": "Contact d'urgence",
+      "name": "Personne à contacter",
+      "gender": "Genre",
+      "relationship": "Relation",
+      "email": "Email",
+      "phone": "Téléphone"
+    },
+    "partnerInfo": {
+      "title": "Informations partenaire",
+      "subtitle": "Partenaire",
+      "name": "Nom",
+      "birthdate": "Date de naissance",
+      "nationality": "Nationalité",
+      "genre": "Genre",
+      "status": "Statut",
+      "isExpatriate": "Expatrié"
+    },
+    "childrensInfo": {
+      "title": "Informations enfant"
+    }
+  },
+  "uploadPicture": {
+    "title": "Mettre à jour la photo de profil",
+    "acceptedFiles": "jpg, png...",
+    "labelButton": "Transférer"
+  },
+  "expenses": {
+    "pageTitle": "Toutes mes notes de frais",
+    "open": "En cours",
+    "closed": "Traitées",
+    "noExpenses": "Aucune demande"
+  },
+  "helpdesks": {
+    "pageTitle": "Toutes mes demandes",
+    "open": "En cours",
+    "closed": "Traitées",
+    "noHelpdesks": "Aucune demande"
+  },
+  "requestStatus": {
+    "created": "Créé",
+    "inProgress": "En cours",
+    "pending": "A modifier",
+    "closed": "Rejeté",
+    "completed": "Terminé"
+  },
+  "showRequest": {},
+  "createRequest": {
+    "general": {
+      "title": "Nouvelle demande",
+      "status": "Statut",
+      "createAt": "Crée le",
+      "priority": {
+        "title": "Priorité"
+      },
+      "titleLabel": "Titre",
+      "description": "Description",
+      "typeOfRequest": "Type de la demande",
+      "errorGlobal": "Votre demande comporte des erreurs",
+      "errorFormNoModifed": "Veuillez modifier au moins une donnée",
+      "errorRequired": "(Champs obligatoire)",
+      "errorFileSize": "(La taille du fichier ne doit pas excéder 9 mb)",
+      "errorGlobalFileSize": "(La taille des fichiers ne doit pas excéder 18 mb)",
+      "errorFormat": "(Format invalide)",
+      "selectPlaceholder": "Veuillez sélectionner une valeur",
+      "optional": "Facultatif",
+      "requestType": "Type de la demande",
+      "attachment": {
+        "label": "Pièce jointe",
+        "description": "(Photo format JPG ou fichier PDF)"
+      },
+      "requestMessages": "Historique des messages",
+      "yourResponse": "Votre réponse"
+    },
+    "menu": {
+      "title": "Nouvelle demande",
+      "expense": "Créer une note de frais",
+      "address": "Modifier mon adresse",
+      "contact": "Modifier mes informations de contact",
+      "status": "Modifier mon état civil",
+      "passport": "Mettre à jour mon passeport",
+      "childrens": "Ajouter ou supprimer un enfant à charge",
+      "bank": "Ajouter ou supprimer un compte bancaire",
+      "helpdesk": "Helpdesk",
+      "profile": "Profil",
+      "other": "Autre demande",
+      "superior": "Superieur"
+    },
+    "expense": {
+      "pageTitle": "",
+      "textSuperiorValidation": {
+        "partOne": "Cette note de frais sera validée par",
+        "partTwo": "Souhaitez-vous déclarer un changement de supérieur ?",
+        "btnChangeSuperior": "Modifier mon supérieur"
+      },
+      "textSuperiorPending": "Une demande de modification du supérieur est en cours",
+      "form": {
+        "date": { "label": "Date","description":"Sample Description" },
+        "category": { "label": "Catégorie", "placeholder": "","description":"Sample Description" },
+        "price": { "label": "Prix TTC", "placeholder": "ex: 34.25","description":"Sample Description" },
+        "currency": { "label": "Devise", "placeholder": "","description":"Sample Description" },
+        "paymentMethod": { "label": "Méthode de paiement", "placeholder": "","description":"Sample Description" },
+        "bankAccount": { "label": "Compte bancaire", "placeholder": "","description":"Sample Description" },
+        "comment": {
+          "label": "Commentaire",
+          "placeholder": "ex: course de taxi",
+          "description":"Sample Description"},
+        "attachment": {
+          "label": "Pièce jointe",
+          "description": "Justificatif des frais"
+        }
+      },
+      "popInErr": {
+        "title": "Envoie d'une nouvelle note de frais"
+      }
+    },
+    "address": {
+      "pageTitle": "Modifier mon adresse",
+      "form": {
+        "pro": "Professionelle",
+        "perso": "Personnelle",
+        "from": "A partir du",
+        "careOf": {
+          "label": "A l'attention de",
+          "placeholder": "ex: Jean Dupont","description":"Sample Description"
+        },
+        "address": {
+          "label": "Adresse",
+          "placeholder": "ex: 7 rue des tamarins","description":"Sample Description"
+        },
+        "city": { "label": "Ville", "placeholder": "ex: Lausanne","description":"Sample Description" },
+        "state": { "label": "Etat", "placeholder": "ex: Vaud","description":"Sample Description" },
+        "pobox": { "label": "Boite postale", "placeholder": "ex: po box","description":"Sample Description" },
+        "zip": { "label": "Code postal", "placeholder": "ex: 1201","description":"Sample Description" },
+        "country": { "label": "Pays", "placeholder": "","description":"Sample Description" },
+        "attachment": {
+          "label": "Pièce jointe",
+          "description": "(Si adresse personnelle) Justificatif de domicile"
+        }
+      },
+      "popInErr": {
+        "title": "Changement d'adresse"
+      }
+    },
+    "contact": {
+      "pageTitle": "Modifier mes informations de contact",
+      "form": {
+        "personalTitle": "Informations de contact personnelles",
+        "professionalTitle": "Informations de contact professionnelles",
+        "emergencyTitle": "Informations de contact d'urgence",
+        "email": { "label": "Email", "placeholder": "ex: example@example.com","description":"Sample Description" },
+        "phone": { "label": "Téléphone", "placeholder": "ex: 0987654321","description":"Sample Description" },
+        "mobile": { "label": "Mobile", "placeholder": "ex: 0987654321","description":"Sample Description" },
+        "gender": { "label": "Genre", "placeholder": "","description":"Sample Description" },
+        "firstName": { "label": "Prénom", "placeholder": "ex: Marie","description":"Sample Description" },
+        "lastName": { "label": "Nom", "placeholder": "ex: Reyes","description":"Sample Description" },
+        "phoneEmergency": {
+          "label": "Téléphone",
+          "placeholder": "ex: 0987654321","description":"Sample Description"
+        },
+        "relationship": { "label": "Relation", "placeholder": "","description":"Sample Description" }
+      },
+      "popInErr": {
+        "title": "Modification des informations de contact"
+      }
+    },
+    "status": {
+      "pageTitle": "Modifier mon état civil",
+      "form": {
+        "changeDate": { "label": "Date de changement", "placeholder": "","description":"Sample Description" },
+        "maritalStatus": { "label": "État civil", "placeholder": "","description":"Sample Description" },
+        "partnerInfo": {
+          "label": "Informations du partenaire",
+          "placeholder": ""
+        },
+        "gender": { "label": "Genre", "placeholder": "","description":"Sample Description" },
+        "firstName": { "label": "Prénom", "placeholder": "ex: Martin","description":"Sample Description" },
+        "lastName": { "label": "Nom", "placeholder": "ex: Durier","description":"Sample Description" },
+        "birthdate": { "label": "Date de naissance", "placeholder": "","description":"Sample Description" },
+        "nationality": { "label": "Nationalité", "placeholder": "ex: Suisse","description":"Sample Description" },
+        "phone": {
+          "label": "Numéro de téléphone",
+          "placeholder": "ex: 0987654321","description":"Sample Description"
+        },
+        "email": { "label": "Email", "placeholder": "ex: example@example.com","description":"Sample Description" },
+        "isExpatriate": { "label": "Expatrié ?", "placeholder": "","description":"Sample Description" },
+        "yes": "Oui",
+        "no": "Non",
+        "passportNumber": {
+          "label": "N° de passeport",
+          "placeholder": "ex: 0987654321","description":"Sample Description"
+        },
+        "expirationDate": { "label": "Date d'expiration", "placeholder": "","description":"Sample Description" },
+        "attachment": {
+          "label": "Pièce jointe",
+          "description": "(Selon l'État civil) Certificat de mariage / Attestation de Pacs / Certificat de divorce / Certificat de décès, (Si partenaire expatrié) Passeport du partenaire"
+        }
+      },
+      "popInErr": {
+        "title": "Modification de l'état civil"
+      }
+    },
+    "passport": {
+      "pageTitle": "Modifier un passeport",
+      "form": {
+        "selectPassport": "Passeport à modifier",
+        "passportNumber": {
+          "label": "Numéro de passeport",
+          "placeholder": "ex: 0987654321","description":"Sample Description"
+        },
+        "expirationDate": { "label": "Date d'expiration", "placeholder": "","description":"Sample Description" },
+        "attachment": {
+          "label": "Pièce jointe",
+          "description": "Passeport"
+        }
+      },
+      "popInErr": {
+        "title": "Modification d'un passeport"
+      }
+    },
+    "childrens": {
+      "pageTitle": {
+        "title1": "Ajouter un enfant",
+        "title2": "Supprimer un enfant"
+      },
+      "form": {
+        "selectChildren": "Selectionnez un enfant",
+        "reason": { "label": "Motif", "placeholder": "ex: ...","description":"Sample Description" },
+        "add": "Ajouter",
+        "remove": "Supprimer",
+        "gender": { "label": "Genre", "placeholder": "","description":"Sample Description" },
+        "firstName": { "label": "Prénom", "placeholder": "ex: Sylvie","description":"Sample Description" },
+        "lastName": { "label": "Nom", "placeholder": "ex: Depontel","description":"Sample Description" },
+        "birthdate": { "label": "Date de naissance", "placeholder": "","description":"Sample Description" },
+        "nationality": { "label": "Nationalité", "placeholder": "","description":"Sample Description" },
+        "passportNumber": {
+          "label": "N° de passeport",
+          "placeholder": "ex: 0987654321","description":"Sample Description"
+        },
+        "expirationDate": { "label": "Date d'expiration", "placeholder": "","description":"Sample Description" },
+        "isExpatriate": { "label": "Enfant expatrié", "placeholder": "","description":"Sample Description" },
+        "isDependant": { "label": "Fiscalement à charge", "placeholder": "","description":"Sample Description" },
+        "yes": "Oui",
+        "no": "Non",
+        "status": { "label": "Statut","description":"Sample Description" },
+        "attachment": {
+          "label": "Pièce jointe",
+          "description": "Passeport de l'enfant (si disponible) / Certificat de naissance / livret de famille / certificat d'adoption"
+        }
+      },
+      "popInErr": {
+        "titleAdd": "Ajout d'un enfant",
+        "titleRemove": "Suppression d'un enfant"
+      }
+    },
+    "bank": {
+      "pageTitle": {
+        "title1": "Ajouter un compte bancaire",
+        "title2": "Supprimer un compte bancaire"
+      },
+      "form": {
+        "selectAccount": {
+          "label": "Selectionnez un compte",
+          "placeholder": "","description":"Sample Description"
+        },
+        "accountNumber": {
+          "label": "Numéro de compte",
+          "placeholder": "accountNumber","description":"Sample Description"
+        },
+        "routingNumber": {
+          "label": "Numéro de routage",
+          "placeholder": "routingNumber","description":"Sample Description"
+        },
+        "reason": {
+          "label": "Motif",
+          "placeholder": "ex: Changement de banque","description":"Sample Description"
+        },
+        "add": "Ajouter",
+        "remove": "Supprimer",
+        "from": "A partir du",
+        "bankName": {
+          "label": "Nom de la banque",
+          "placeholder": "ex: MyNewBank","description":"Sample Description"
+        },
+        "country": { "label": "Pays", "placeholder": "","description":"Sample Description" },
+        "bic": { "label": "BIC", "placeholder": "ex: LLLL LL XX XXX","description":"Sample Description"},
+        "iban": { "label": "IBAN", "placeholder": "ex: CP CC BBAN" ,"description":"Sample Description"},
+        "beneficiary": {
+          "label": "Bénéficiaire",
+          "placeholder": "ex: Cyril Martin","description":"Sample Description"
+        },
+        "currency": { "label": "Devise", "placeholder": "","description":"Sample Description" },
+        "comment": {
+          "label": "Commentaire",
+          "placeholder": "ex: Mon nouveau compte...","description":"Sample Description"
+        },
+        "type": { "label": "Type de compte","description":"Sample Description" },
+        "attachment": {
+          "label": "Pièce jointe",
+          "description": "Relevé d'Identité Bancaire"
+        }
+      },
+      "popInErr": {
+        "titleAdd": "Ajout d'un compte bancaire",
+        "titleRemove": "Suppression d'un compte bancaire"
+      }
+    },
+    "other": {
+      "sendRequestPopup": {
+        "title": "Votre demande sera transmise à votre gestionnaire et ne sera plus modifiable. Voulez-vous la transmettre ?",
+        "hideMessage": "Ne plus afficher ce message",
+        "yes": "Oui",
+        "no": "Non"
+      },
+      "form": {
+        "title": { "label": "Titre", "placeholder": "ex: Coupure d'eau","description":"Sample Description" },
+        "desc": {
+          "label": "Description",
+          "placeholder": "ex: Lorem ipsum dolor sit amet consectutir adepiscin...","description":"Sample Description"
+        },
+        "priority": { "label": "Priorité" },
+        "attachment": {
+          "label": "Pièce jointe",
+          "description": "Si nécessaire, merci de joindre un justificatif en lien avec votre demande.","description":"Sample Description"
+        }
+      },
+      "popInErr": {
+        "title": "Demande Helpdesk"
+      }
+    },
+    "superior": {
+      "pageTitle": "Modifier mon supérieur",
+      "form": {
+        "gender": { "label": "Genre","description":"Sample Description" },
+        "firstName": { "label": "Prénom","description":"Sample Description" },
+        "lastName": { "label": "Nom","description":"Sample Description" },
+        "email": { "label": "Email","description":"Sample Description" },
+        "phone": { "label": "Numéro de téléphone}","description":"Sample Description" },
+        "popInErr": {
+          "title": "Modification du supérieur"
+        }
+      }
+    }
+  }
+}
